@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Solutions | TechMorrow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">🌱 TechMorrow</a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="what-is-ewaste.html">E-waste</a>
+            <a href="history.html">History</a>
+            <a href="environmental-impact.html">Environment</a>
+            <a href="causes-of-ewaste.html">Causes</a>
+            <a class="current-page" aria-current="page" href="solutions.html">Solutions</a>
+            <a href="recycle.html">Recycle</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="pledge.html">Pledge</a>
+            <a href="resources.html">Resources</a>
+            <a href="estimator.html">Value Estimator</a>
+        </nav>
+    <div id="google_translate_element"></div>
+
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,te,pa,ta,bn,gu,ml,kn,or,as,ur',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </header>
+    <main>
+        <section class="content-section">
+            <h1>Solutions for your device</h1>
+            <p>Choose a device from the list. The advice below will change to match your selection.</p>
+            <figure><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=85" alt="Hands carefully repairing an electronic device" loading="lazy"></figure>
+            <label for="device-select">Select a device</label>
+            <select id="device-select">
+                <option value="phone">Smartphone</option><option value="laptop">Laptop</option><option value="tablet">Tablet</option><option value="tv">TV or monitor</option><option value="printer">Printer</option><option value="kitchen">Small kitchen appliance</option><option value="battery">Battery or power bank</option>
+            </select>
+            <article class="highlight"><h2 id="solution-name">Smartphone</h2><h3>Donate or refurbish</h3><p id="solution-donate">If it works, securely erase your data and ask a trusted reuse group or refurbisher whether they accept it.</p><h3>Reuse</h3><p id="solution-reuse">A working phone can become a music player, offline camera or emergency backup, if the battery is safe.</p><h3>Recycle</h3><p id="solution-recycle">If it cannot be repaired or reused, take it to an appropriate e-waste collection point.</p></article>
+            <p>Before giving away a device, back up important files, sign out of accounts and follow the maker's instructions to erase personal data.</p>
+        </section>
+    </main>
+    <section class="location-finder">
+            <p class="eyebrow">TAKE A LOCAL STEP</p>
+            <h2>Find e-waste collection points near you</h2>
+            <p>Enter your city, area or PIN code. TechMorrow will open a map search for nearby e-waste donation and recycling centres.</p>
+            <form id="location-form">
+                <label for="user-location">Your city, area or PIN code</label>
+                <input type="text" id="user-location" name="user-location" placeholder="e.g. Phagwara, Punjab" maxlength="100" required>
+                <button type="submit">Find nearby centres</button>
+            </form>
+            <p class="map-note">Map listings can change. Contact a centre first to confirm its address and what items it accepts.</p>
+            <iframe id="location-map" title="Map of e-waste collection points near your entered location" loading="lazy" hidden></iframe>
+            <p><a id="open-map-link" href="https://www.google.com/maps" target="_blank" rel="noopener" hidden>Open these results in Google Maps</a></p>
+        </section>
+    </main>
+    <footer>
+       <P> Other resources: <a href="https://www.ewri.in/" target="_blank" rel="noopener noreferrer">E-waste Research Institute</a></P>
+        <P ><strong>TechMorrow</strong> — Repair, reuse and recycle responsibly.</p>
+        <P> Other resources: <a href="https://namoewaste.com/" target="_blank" rel="noopener noreferrer">Namo E-waste</a></P>
+        <p> Other resources: <a href="https://www.ewasteindia.com/" target="_blank" rel="noopener noreferrer">E-waste India</a></P>
+        <p> Other resources: <a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-%28e-waste%29" target="_blank" rel="noopener noreferrer">World Health Organization: E-waste</a></P>
+        <p>Feedback: <a href="mailto:techmorrow826@gmail.com">techmorrow826@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

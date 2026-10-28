@@ -1,0 +1,379 @@
+/* TechMorrow styles - beginner-friendly CSS with comments. */
+
+/* 1. Basic page colours and text */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f8f4;
+    color: #203b30;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* 2. Top header and navigation shared by every page */
+.site-header {
+    background-color: #ffffff;
+    padding: 16px 4%;
+    border-bottom: 1px solid #d5e7d9;
+    box-shadow: 0 4px 18px rgba(20, 70, 45, 0.07);
+}
+
+.logo {
+    display: inline-block;
+    color: #126344;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+nav a {
+    color: #245441;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.current-page {
+    background-color: #dff2e4;
+    color: #075c3a;
+}
+
+nav a.current-page {
+    box-shadow: inset 0 -2px #168052;
+}
+
+/* 3. Main content area */
+main {
+    max-width: 1080px;
+    margin: 34px auto;
+    padding: 0 22px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+h1, h2, h3 {
+    color: #145d40;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.65rem;
+}
+
+p {
+    max-width: 75ch;
+}
+
+/* 4. Home page hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    background: linear-gradient(135deg, #e8f7eb, #f8fcf8);
+    border: 1px solid #d4ead9;
+    border-radius: 22px;
+    padding: 28px;
+    overflow: hidden;
+}
+
+.hero-copy,
+.hero-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.eyebrow {
+    color: #14734b;
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-description {
+    font-size: 1.08rem;
+}
+
+.home-note {
+    background-color: #ffffff;
+    border-left: 4px solid #27865a;
+    padding: 12px 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+figure {
+    margin: 18px 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.hero-image img {
+    min-height: 300px;
+    box-shadow: 0 15px 35px rgba(18, 75, 48, 0.15);
+}
+
+/* 5. Home page value cards */
+.welcome-strip {
+    display: flex;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.welcome-strip article,
+.card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #d9e9dd;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(25, 75, 48, 0.05);
+}
+
+.value-icon {
+    display: inline-block;
+    background-color: #dff2e4;
+    color: #126344;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+.stat-panel {
+    text-align: center;
+    background-color: #145d40;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+}
+
+.stat-panel .eyebrow,
+.stat-panel h2 {
+    color: #c8f1d4;
+}
+
+.big-stat {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.stat-source {
+    color: #d8f0df;
+    font-size: 0.9rem;
+}
+
+/* 6. Content panels, images and interactive areas */
+.content-section,
+main > section:not(.hero):not(.welcome-strip):not(.stat-panel) {
+    background-color: #ffffff;
+    border: 1px solid #dceae0;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 25px rgba(25, 75, 48, 0.045);
+}
+
+.small-photo img,
+.section-image img {
+    max-height: 320px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    min-width: 200px;
+}
+
+.highlight {
+    background-color: #e6f5e9;
+    border-left: 5px solid #248153;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 20px 0;
+}
+
+/* 7. Forms, dropdowns and buttons */
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 520px;
+    font: inherit;
+    color: #203b30;
+    background-color: #ffffff;
+    border: 1px solid #a8cbb3;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+fieldset {
+    border: 1px solid #c9e0cf;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 18px 0;
+}
+
+legend {
+    color: #145d40;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+button,
+.button {
+    display: inline-block;
+    background-color: #146744;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 11px 17px;
+    border: 0;
+    border-radius: 9px;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover,
+.button:hover {
+    background-color: #0c5033;
+    transform: translateY(-1px);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #e5a93d;
+    outline-offset: 3px;
+}
+
+/* 8. Language selector and nearby e-waste map on the home page */
+.language-box {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background-color: #f3f8f4;
+    border-radius: 10px;
+}
+
+.language-box p {
+    margin: 0 0 6px;
+}
+
+.location-finder {
+    background-color: #ffffff;
+    border: 1px solid #dceae0;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 25px rgba(25, 75, 48, 0.045);
+}
+
+.location-finder input {
+    display: block;
+}
+
+.map-note {
+    color: #52685b;
+    font-size: 0.92rem;
+}
+
+#location-map {
+    width: 100%;
+    height: 380px;
+    border: 0;
+    border-radius: 12px;
+    margin-top: 18px;
+}
+
+/* 9. Footer */
+footer {
+    background-color: #103f30;
+    color: #edf8ef;
+    text-align: center;
+    padding: 24px 18px;
+    margin-top: 45px;
+}
+
+footer a {
+    color: #c8f1d4;
+}
+
+/* 10. Make the layout fit smaller screens */
+@media (max-width: 760px) {
+    .site-header {
+        padding: 14px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 7px 8px;
+    }
+
+    main {
+        margin-top: 20px;
+        padding: 0 12px;
+    }
+
+    .hero,
+    .welcome-strip {
+        display: block;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .welcome-strip article {
+        margin-bottom: 12px;
+    }
+
+    .content-section,
+    main > section:not(.hero):not(.welcome-strip):not(.stat-panel) {
+        padding: 18px;
+    }
+}

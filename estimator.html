@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Estimator | TechMorrow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">🌱 TechMorrow</a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="what-is-ewaste.html">E-waste</a>
+            <a href="history.html">History</a>
+            <a href="environmental-impact.html">Environment</a>
+            <a href="causes-of-ewaste.html">Causes</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="recycle.html">Recycle</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="pledge.html">Pledge</a>
+            <a href="resources.html">Resources</a>
+            <a class="current-page" aria-current="page" href="estimator.html">Value Estimator</a>
+        </nav>
+    <div id="google_translate_element"></div>
+
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,te,pa,ta,bn,gu,ml,kn,or,as,ur',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </header>
+    <main>
+        <section class="content-section"><h1>Value Estimator</h1>
+            <figure class="section-image"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=85" alt="Laptop and electronic devices on a desk" loading="lazy"></figure><p>Answer these questions for a rough guide. This is not a live market quote, and the real value depends on model, local demand and repair costs.</p>
+        <form id="estimator-form"><label for="device-type">Device type</label><select id="device-type"><option value="phone">Smartphone</option><option value="laptop">Laptop</option><option value="tablet">Tablet</option><option value="tv">TV or monitor</option><option value="printer">Printer</option><option value="other">Other electronics</option></select><label for="model">Brand and model</label><input id="model" type="text" maxlength="60" required placeholder="e.g. Samsung Galaxy A54"><small>Maximum 60 characters. Do not enter personal information.</small><label for="condition">Condition</label><select id="condition"><option value="excellent">Excellent</option><option value="good">Good</option><option value="fair">Fair</option><option value="poor">Poor</option></select><label for="age">Age</label><select id="age"><option value="under1">Less than 1 year</option><option value="1to3">1–3 years</option><option value="3to5">3–5 years</option><option value="over5">More than 5 years</option></select><label for="functionality">Functionality</label><select id="functionality"><option value="fully">Fully functional</option><option value="minor">Minor issues</option><option value="major">Major issues</option><option value="dead">Not working</option></select><button type="submit">Estimate value</button></form><section id="estimate-result" class="highlight" hidden aria-live="polite"></section></section>
+    </main>
+    <footer>
+       <P> Other resources: <a href="https://www.ewri.in/" target="_blank" rel="noopener noreferrer">E-waste Research Institute</a></P>
+        <P ><strong>TechMorrow</strong> — Repair, reuse and recycle responsibly.</p>
+        <p> Other resources: <a href="https://namoewaste.com/" target="_blank" rel="noopener noreferrer">Namo E-waste</a></P>
+        <p> Other resources: <a href="https://www.ewasteindia.com/" target="_blank" rel="noopener noreferrer">E-waste India</a></P>
+        <p> Other resources: <a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-%28e-waste%29" target="_blank" rel="noopener noreferrer">World Health Organization: E-waste</a></P>
+        <p>Feedback: <a href="mailto:techmorrow826@gmail.com">techmorrow826@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
